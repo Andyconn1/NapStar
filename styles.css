@@ -40,6 +40,11 @@ tr.start,tr.end {
     background-color: rgb(82, 82, 82);
 }
 
+/* input sizing */
+input {
+    display: block;
+}
+
 /* centers a div horizontally */
 .center {
     display: flex;
