@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" >
+
+    <title>NapStar</title>
+  </head>
+
+  <body>
+    <br/>
+    <h1>Ethan's NapStar Plan</h1>
+
+    <table>
+      <tr class="heading"><th>Period</th><th>Duration</th><th>Start</th><th>Finish</th></tr>
+      <tr class="start"><th>Morning</th><td></td><td></td><td><input type="time" id="finish1" onchange="calcAll()"></td></tr>
+      <tr class="awake"><th>Awake 1</th><td><input type="time" id="duration2" onchange="calcAll()"></td><td><input type="time" id="start2" disabled="true"></td><td><input type="time" id="finish2" disabled="true"></td></tr>
+      <tr class="sleep"><th>Sleep 1</th><td><input type="time" id="duration3" onchange="calcAll()"></td><td><input type="time" id="start3" disabled="true"></td><td><input type="time" id="finish3" disabled="true"></td></tr>
+      <tr class="awake"><th>Awake 2</th><td><input type="time" id="duration4" onchange="calcAll()"></td><td><input type="time" id="start4" disabled="true"></td><td><input type="time" id="finish4" disabled="true"></td></tr>
+      <tr class="sleep"><th>Sleep 2</th><td><input type="time" id="duration5" onchange="calcAll()"></td><td><input type="time" id="start5" disabled="true"></td><td><input type="time" id="finish5" disabled="true"></td></tr>
+      <tr class="awake"><th>Awake 3</th><td><input type="time" id="duration6" onchange="calcAll()"></td><td><input type="time" id="start6" disabled="true"></td><td><input type="time" id="finish6" disabled="true"></td></tr>
+      <tr class="end"><th>Bedtime</th><td></td><td><input type="time" id="start7" disabled="true"></td><td></td></tr>
+    </table>
+
+    <br/>
+
+    <!--Button Block-->
+    <div class="d-grid gap-2 col-6 mx-auto" style="max-width: 200px;">  
+
+        <!-- Set as default -->
+        <button type="button" class="btn btn-success" onclick="btnSetAsDefault()">Set As Defaults</button>
+
+        <!-- Reset -->
+        <button type="button" class="btn btn-success" onclick="btnResetToDefaults()">Reset To Defaults</button>
+
+        <!-- Clear All -->
+        <button type="button" class="btn btn-warning" onclick="btnClearAll()">Clear All</button>
+
+        <!-- Clear All -->
+        <button type="button" class="btn btn-danger" onclick="btnDeleteAllData()">Delete Stored Data</button>
+
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script>
+      applySavedTimes();
+    </script>
+  </body>
+</html>
