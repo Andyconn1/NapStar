@@ -24,6 +24,8 @@ table{
 th, td {
     padding: 3px;
     border-bottom: 1px solid black;
+    min-width: 60px;
+    max-width: 75px;
 }
 tr.sleep {
     color:rgb(179, 33, 23);
