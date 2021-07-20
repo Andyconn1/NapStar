@@ -5,6 +5,13 @@ h1 {
     font-size: 20px;
 }
 
+/* version */
+p.version {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
 /* Table formatting */
 table{
     font-size: 12px;

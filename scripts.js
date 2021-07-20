@@ -113,7 +113,7 @@ function getDefaultTimes(){
 function applyDefaultTimes(){
     var defaultTimes = getDefaultTimes();
     if(defaultTimes){
-        console.log("loading saved times...")
+        console.log("loading updated default times...")
         document.getElementById('finish1').value = defaultTimes.finish1;
         document.getElementById('duration2').value = defaultTimes.duration2;
         document.getElementById('duration3').value = defaultTimes.duration3;
@@ -133,7 +133,8 @@ function applyDefaultTimes(){
 // ---------------------------- BUTTONS
 // --------------------------------------------------------
 function btnSetAsDefault(){
-    setDefaultTimes;
+    setDefaultTimes();
+    console.log("Saved new defaults.")
     alert("Saved as defaults.");
 } 
 function btnResetToDefaults(){
@@ -150,9 +151,13 @@ function btnClearAll(){
     calcAll();
 }
 function btnDeleteAllData(){
+    btnClearAll();
     localStorage.clear();
-    applyOriginalDefaultTimes();
 }
 
+// -------------------------------------------------------- 
+// ---------------------------- Version Check
+// --------------------------------------------------------
+document.getElementById('version').innerHTML = 'version 01.00';
 
 
