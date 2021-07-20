@@ -157,6 +157,6 @@ function btnDeleteAllData(){
 // -------------------------------------------------------- 
 // ---------------------------- Version Check
 // --------------------------------------------------------
-document.getElementById('version').innerHTML = 'version 01.02';
+document.getElementById('version').innerHTML = 'version 01.03';
 
 
