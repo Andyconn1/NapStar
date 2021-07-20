@@ -76,7 +76,6 @@ function applySavedTimes(){
         document.getElementById('duration5').value = savedTimes.duration5;
         document.getElementById('duration6').value = savedTimes.duration6;
     }else{
-        console.log("using default times...")
         applyDefaultTimes();
     }
     calcAll();
@@ -158,6 +157,6 @@ function btnDeleteAllData(){
 // -------------------------------------------------------- 
 // ---------------------------- Version Check
 // --------------------------------------------------------
-document.getElementById('version').innerHTML = 'version 01.00';
+document.getElementById('version').innerHTML = 'version 01.01';
 
 
